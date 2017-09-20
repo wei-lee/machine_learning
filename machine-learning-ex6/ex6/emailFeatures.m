@@ -47,7 +47,7 @@ x = zeros(n, 1);
 %              x = [ 0 0 0 0 1 0 0 0 ... 0 0 0 0 1 ... 0 0 0 1 0 ..];
 %
 %
-words_size = size(word_indices, 2)
+words_size = length(word_indices);
 for i = 1:n,
   for j = 1:words_size,
     if i == word_indices(j),
